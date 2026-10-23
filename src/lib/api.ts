@@ -1,7 +1,8 @@
 import type { ListParams, Paginated, Project, Stats, User } from "./types";
 import type { LoginValues, ProjectFormValues } from "./validators";
 
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
+const BASE =
+  process.env.API_URL ?? "https://project-review-backend-2sje.vercel.app/api";
 
 export class ApiError extends Error {
   constructor(
